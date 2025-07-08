@@ -3073,7 +3073,7 @@ Children:
     Type: RAEtherNetIPTag
     DataType: Int32
     ValueRank: OneDimension
-    ArrayDimensions: [7]
+    ArrayDimensions: [8]
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -3083,7 +3083,7 @@ Children:
     Type: RAEtherNetIPTag
     DataType: Int32
     ValueRank: OneDimension
-    ArrayDimensions: [7]
+    ArrayDimensions: [8]
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType

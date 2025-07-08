@@ -11405,22 +11405,12 @@ Children:
     Type: RAEtherNetIPTag
     DataType: Int32
     ValueRank: OneDimension
-    ArrayDimensions: [7]
+    ArrayDimensions: [8]
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
       Value: "PLC.DateTime"
-  - Name: DateTime_Set
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    ValueRank: OneDimension
-    ArrayDimensions: [7]
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "PLC.DateTime_Set"
   - Name: DateTime_Sync
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -11453,6 +11443,16 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "PLC.Status_PROG"
+  - Name: DateTime_Set
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [8]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DateTime_Set"
 - Name: BOOLS
   Type: RAEtherNetIPTag
   DataType: Boolean

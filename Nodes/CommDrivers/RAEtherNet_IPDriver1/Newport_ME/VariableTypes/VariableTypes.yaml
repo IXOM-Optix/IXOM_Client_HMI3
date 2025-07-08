@@ -193,22 +193,12 @@ Children:
     Type: RAEtherNetIPTag
     DataType: Int32
     ValueRank: OneDimension
-    ArrayDimensions: [7]
+    ArrayDimensions: [8]
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
       Value: "DateTime"
-  - Name: DateTime_Set
-    Type: RAEtherNetIPTag
-    DataType: Int32
-    ValueRank: OneDimension
-    ArrayDimensions: [7]
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "DateTime_Set"
   - Name: DateTime_Sync
     Type: RAEtherNetIPTag
     DataType: Boolean
@@ -241,6 +231,16 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Status_PROG"
+  - Name: DateTime_Set
+    Type: RAEtherNetIPTag
+    DataType: Int32
+    ValueRank: OneDimension
+    ArrayDimensions: [8]
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "DateTime_Set"
 - Name: 'CHANNEL_AI:O:02'
   Id: g=63e536beb2ad508f53ba1723cb0c0cf8
   Supertype: TagStructure
