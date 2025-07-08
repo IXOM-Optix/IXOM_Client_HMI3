@@ -1,0 +1,28 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: Time_Stamp
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Jan 1, 1601, 12:00:00 AM"
+- Name: DateQuery
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Jan 1, 1601, 12:00:00 AM"
+- Name: ItemRtn
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Test"
+- File: recorder/recorder.yaml
+- File: Objects/Objects.yaml
+- Name: String1
+  Type: BaseDataVariableType
+  DataType: String
+  Value: " v"
+- Name: String2
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- File: Resin_Concentrations/Resin_Concentrations.yaml
+- File: Enumerations/Enumerations.yaml
+- File: Monthly_Report/Monthly_Report.yaml
