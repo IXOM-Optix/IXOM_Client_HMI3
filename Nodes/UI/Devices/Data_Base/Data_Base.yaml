@@ -4693,7 +4693,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 578.0
+      Value: 580.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -4712,7 +4712,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 175.0
+      Value: 135.0
     - Name: VerticalAlignment
       Type: BaseVariableType
       DataType: VerticalAlignment
@@ -4722,7 +4722,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 2.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -4745,7 +4744,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 50.0
+      Value: 35.0
   - Name: Label2
     Type: Label
     Children:
@@ -4843,17 +4842,17 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 175.0
+      Value: 135.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 626.0
+      Value: 645.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 50.0
+      Value: 35.0
     - Name: HorizontalAlignment
       Type: BaseVariableType
       DataType: HorizontalAlignment
@@ -4872,7 +4871,7 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 338.0
+      Value: 385.0
     - Name: RightMargin
       Type: BaseVariableType
       DataType: Size
@@ -5044,20 +5043,20 @@ Children:
     ModellingRule: Optional
     Value: true
 - Name: RegenData_MagnaPak_Info_Tab
-  Id: g=a6108fa9c6fb7463e8c5d087db9f234e
-  Supertype: ScaleLayout
+  Id: g=fbc3ea045452099674cf814849ce2ff8
+  Supertype: Panel
   ReferenceType: HasComponent
   Children:
-  - Name: OriginalWidth
-    Type: BaseDataVariableType
+  - Name: Width
+    Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: -1.0
-  - Name: OriginalHeight
-    Type: BaseDataVariableType
+    Value: 520.0
+  - Name: Height
+    Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: -1.0
+    Value: 530.0
   - Name: Tab 0
     Type: Rectangle
     Children:
@@ -5078,12 +5077,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 525.0
+      Value: 520.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 509.0
+      Value: 510.0
     - Name: Box_Title
       Type: Rectangle
       Children:
@@ -5135,6 +5134,11 @@ Children:
           DataType: LocalizedText
           ModellingRule: Optional
           Value: {"LocaleId":"en-US","Text":"Info"}
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
       - Name: CornerRadius
         Type: BaseDataVariableType
         DataType: Size
@@ -11766,48 +11770,21 @@ Children:
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 2
-  - Name: Alias_RegenData
-    Type: Alias
-    DataType: NodeId
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Objects/IXOM_Client_HMI3/UI/Devices/Data_Base/RegenData_MagnaPak_UDT"
-  - Name: FontScaling
-    Type: BaseDataVariableType
-    DataType: Boolean
-    ModellingRule: Optional
-    Value: true
-  - Name: FillMode
-    Type: BaseDataVariableType
-    DataType: FillModeEnum
-    ModellingRule: Optional
-  - Name: VerticalAlignment
-    Type: BaseVariableType
-    DataType: VerticalAlignment
-    ModellingRule: Optional
-    Value: 2
-  - Name: HorizontalAlignment
-    Type: BaseVariableType
-    DataType: HorizontalAlignment
-    ModellingRule: Optional
-    Value: 2
 - Name: RegenData_MagnaPak_BV_Tab
-  Id: g=0d33abfa7fb24e94a7674a852fec1b5b
-  Supertype: ScaleLayout
+  Id: g=cf46a976278475db1fc6f3c7d30806ab
+  Supertype: Panel
   ReferenceType: HasComponent
   Children:
-  - Name: OriginalWidth
-    Type: BaseDataVariableType
+  - Name: Width
+    Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: -1.0
-  - Name: OriginalHeight
-    Type: BaseDataVariableType
+    Value: 520.0
+  - Name: Height
+    Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: -1.0
+    Value: 530.0
   - Name: Tab 1
     Type: Rectangle
     Children:
@@ -11828,12 +11805,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 525.0
+      Value: 520.0
     - Name: Height
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 509.0
+      Value: 510.0
     - Name: Box_Title
       Type: Rectangle
       Children:
@@ -11885,6 +11862,11 @@ Children:
           DataType: Color
           ModellingRule: Optional
           Value: "#3b3b3b"
+        - Name: FontSize
+          Type: BaseDataVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 20.0
       - Name: CornerRadius
         Type: BaseDataVariableType
         DataType: Size
@@ -12093,7 +12075,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Resin_Bed@NodeId"
+          Value: "{Alias_RegenData}/BV/Resin_Bed@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -12640,7 +12622,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Rewet@NodeId"
+          Value: "{Alias_RegenData}/BV/Rewet@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -13187,7 +13169,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Reuse_Brine@NodeId"
+          Value: "{Alias_RegenData}/BV/Reuse_Brine@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -13734,7 +13716,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Reuse_Breakthru@NodeId"
+          Value: "{Alias_RegenData}/BV/Reuse_Breakthru@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -14281,7 +14263,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Reuse_to_Waste@NodeId"
+          Value: "{Alias_RegenData}/BV/Reuse_to_Waste@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -14832,7 +14814,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Fresh_Brine@NodeId"
+          Value: "{Alias_RegenData}/BV/Fresh_Brine@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -15379,7 +15361,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Brine_Returned@NodeId"
+          Value: "{Alias_RegenData}/BV/Brine_Returned@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -15926,7 +15908,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Rinse_Addition@NodeId"
+          Value: "{Alias_RegenData}/BV/Rinse_Addition@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -16473,7 +16455,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Rinse_Breakthru@NodeId"
+          Value: "{Alias_RegenData}/BV/Rinse_Breakthru@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -17020,7 +17002,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Brine_to_Waste@NodeId"
+          Value: "{Alias_RegenData}/BV/Brine_to_Waste@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -17567,7 +17549,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Rinse_to_Waste@NodeId"
+          Value: "{Alias_RegenData}/BV/Rinse_to_Waste@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -18114,7 +18096,7 @@ Children:
         - Name: DynamicLink
           Type: DynamicLink
           DataType: NodePath
-          Value: "{Alias_RegenData_BV}/BV/Resusped@NodeId"
+          Value: "{Alias_RegenData}/BV/Resusped@NodeId"
           Children:
           - Name: Mode
             Type: BaseVariableType
@@ -18524,33 +18506,6 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-  - Name: Alias_RegenData_BV
-    Type: Alias
-    DataType: NodeId
-    Children:
-    - Name: Kind
-      Type: PropertyType
-      DataType: NodeId
-      Value: "/Objects/IXOM_Client_HMI3/UI/Devices/Data_Base/RegenData_MagnaPak_UDT"
-  - Name: FontScaling
-    Type: BaseDataVariableType
-    DataType: Boolean
-    ModellingRule: Optional
-    Value: true
-  - Name: FillMode
-    Type: BaseDataVariableType
-    DataType: FillModeEnum
-    ModellingRule: Optional
-  - Name: VerticalAlignment
-    Type: BaseVariableType
-    DataType: VerticalAlignment
-    ModellingRule: Optional
-    Value: 2
-  - Name: HorizontalAlignment
-    Type: BaseVariableType
-    DataType: HorizontalAlignment
-    ModellingRule: Optional
-    Value: 2
 - Name: ResinConcentrations_UDT
   Id: g=337ceaceebc797a377f68afe3eac7876
   Supertype: BaseObjectType

@@ -160,6 +160,16 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+    - Name: TabWidth
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -1.0
+    - Name: TabHeight
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: -1.0
 - File: DeviceSettingsWidget/DeviceSettingsWidget.yaml
 - File: NetworkSettingsWidget/NetworkSettingsWidget.yaml
 - File: LoadApplicationWidget/LoadApplicationWidget.yaml

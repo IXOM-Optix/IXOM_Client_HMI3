@@ -6598,7 +6598,7 @@ Children:
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 18.0
+      Value: 14.0
   - Name: Start
     Type: Button
     Children:

@@ -99496,6 +99496,45 @@ Children:
                 Type: BaseDataVariableType
                 DataType: UInt32
                 ValueRank: ScalarOrOneDimension
+          - Name: MethodContainer7
+            Type: BaseObjectType
+            Children:
+            - Name: ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/Commands/VariableCommands"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Set"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: VariableToModify
+                Type: BaseDataVariableType
+                DataType: VariablePointer
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_PLC}/SetDateTime/WeekDay@NodeId"
+              - Name: Value
+                Type: BaseDataVariableType
+                DataType: Int32
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "{Alias_PLC}/DateTime/WeekDay"
+              - Name: ArrayIndex
+                Type: BaseDataVariableType
+                DataType: UInt32
+                ValueRank: ScalarOrOneDimension
         - Name: EventArguments
           Type: MouseClickEvent
           Children:
