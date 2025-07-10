@@ -79923,8 +79923,6 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{Regen_History_Alias}/Index"
-    - Name: Label1
-      Type: Label
     - Name: Label3
       Type: Label
     - Name: Label16
@@ -83071,8 +83069,6 @@ Children:
           Type: DynamicLink
           DataType: NodePath
           Value: "{Monthly_Report_Alias}/Index"
-    - Name: Label1
-      Type: Label
     - Name: Label3
       Type: Label
     - Name: Label16
@@ -92823,10 +92819,18 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Alias_ACC}/Units"
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Units"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -93813,10 +93817,18 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Alias_ACC}/Units"
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Units"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -94143,10 +94155,18 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Alias_ACC}/Units"
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Units"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -94473,10 +94493,18 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Alias_ACC}/Units"
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Units"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
