@@ -92788,7 +92788,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_ACC}/Total_Today@Value"
+                  Value: "{Alias_ACC}/Total_This_Day@Value"
               - Name: Slope
                 Type: BaseDataVariableType
                 DataType: Double
@@ -93192,7 +93192,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_ACC}/Last_5_Average@Value"
+                  Value: "{Alias_ACC}/Average_Value@Value"
               - Name: Slope
                 Type: BaseDataVariableType
                 DataType: Double
@@ -93522,7 +93522,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_ACC}/Last_5_Average@Value"
+                  Value: "{Alias_ACC}/Average_Value@Value"
               - Name: Slope
                 Type: BaseDataVariableType
                 DataType: Double
@@ -93786,7 +93786,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_ACC}/Total_Today@Value"
+                  Value: "{Alias_ACC}/Total_This_Day@Value"
               - Name: Slope
                 Type: BaseDataVariableType
                 DataType: Double
@@ -94124,7 +94124,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_ACC}/Total_Today@Value"
+                  Value: "{Alias_ACC}/Total_This_Day@Value"
               - Name: Slope
                 Type: BaseDataVariableType
                 DataType: Double
@@ -94462,7 +94462,7 @@ Children:
                 - Name: DynamicLink
                   Type: DynamicLink
                   DataType: NodePath
-                  Value: "{Alias_ACC}/Total_Today@Value"
+                  Value: "{Alias_ACC}/Total_This_Day@Value"
               - Name: Slope
                 Type: BaseDataVariableType
                 DataType: Double

@@ -13,31 +13,37 @@ Children:
     Type: BaseDataVariableType
     DataType: String
     Value: "0"
-  - Name: Last
+  - Name: This_Day
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Last_5_Average
+  - Name: This_Week
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Total_Last_Day
+  - Name: This_Month
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Total_Last_Month
+  - Name: This_Year
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Total_Last_Year
+  - Name: This_Lifetime
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Total_Today
+  - Name: Last_Day
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Total_This_Month
+  - Name: Last_Week
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Total_This_Year
+  - Name: Last_Month
     Type: BaseDataVariableType
     DataType: Float
-  - Name: Total_Lifetime
+  - Name: Last_Year
+    Type: BaseDataVariableType
+    DataType: Float
+  - Name: Average_Count
+    Type: BaseDataVariableType
+    DataType: Int16
+  - Name: Average_Value
     Type: BaseDataVariableType
     DataType: Float
   - Name: Units
@@ -594,7 +600,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_ACC}/Last_5_Average@Value"
+                Value: "{Alias_ACC}/Average_Value@Value"
             - Name: Slope
               Type: BaseDataVariableType
               DataType: Double
@@ -1055,7 +1061,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Alias_ACC}/Total_Today@Value"
+                Value: "{Alias_ACC}/Total_This_Day@Value"
             - Name: Slope
               Type: BaseDataVariableType
               DataType: Double
@@ -1791,7 +1797,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ACC_POP}/Last_5_Average"
+        Value: "{Alias_ACC_POP}/Average_Value"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
@@ -1963,7 +1969,7 @@ Children:
       - Name: DynamicLink
         Type: DynamicLink
         DataType: NodePath
-        Value: "{Alias_ACC_POP}/Total_Today"
+        Value: "{Alias_ACC_POP}/Total_This_Day"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
