@@ -1,6 +1,100 @@
 Name: VariableTypes
 Type: FolderType
 Children:
+- Name: Accum2
+  Id: g=24364626c945c1057f846e727d01104d
+  Supertype: TagStructure
+  DataType: Accum2
+  ValueRank: Any
+  Children:
+  - Name: This_Day
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "This_Day"
+  - Name: This_Week
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "This_Week"
+  - Name: This_Month
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "This_Month"
+  - Name: This_Year
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "This_Year"
+  - Name: This_Lifetime
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "This_Lifetime"
+  - Name: Last_Day
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Last_Day"
+  - Name: Last_Week
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Last_Week"
+  - Name: Last_Month
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Last_Month"
+  - Name: Last_Year
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Last_Year"
+  - Name: Average_Count
+    Type: RAEtherNetIPTag
+    DataType: Int16
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Average_Count"
+  - Name: Average_Value
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Average_Value"
 - Name: PLC_Data_Type1
   Id: g=1cf3ed75733b3f223b168c56082f5177
   Supertype: TagStructure
@@ -51,7 +145,7 @@ Children:
     Type: RAEtherNetIPTag
     DataType: Int32
     ValueRank: OneDimension
-    ArrayDimensions: [7]
+    ArrayDimensions: [8]
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -61,7 +155,7 @@ Children:
     Type: RAEtherNetIPTag
     DataType: Int32
     ValueRank: OneDimension
-    ArrayDimensions: [7]
+    ArrayDimensions: [8]
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
@@ -4119,14 +4213,14 @@ Children:
   DataType: Monthly_Report1
   ValueRank: Any
   Children:
-  - Name: MMYYYY
+  - Name: Time_Stamp
     Type: RAEtherNetIPTag
     DataType: Int32
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "MMYYYY"
+      Value: "Time_Stamp"
   - Name: Water_Treated
     Type: RAEtherNetIPTag
     DataType: Float
@@ -4167,22 +4261,22 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Contactor_Flow_Rate_Avg"
-  - Name: Time_Above_90_Percent_Capacity
+  - Name: Time_Above_90_Pct_Cap
     Type: RAEtherNetIPTag
     DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Time_Above_90_Percent_Capacity"
-  - Name: Time_Above_100_Percent_Capacity
+      Value: "Time_Above_90_Pct_Cap"
+  - Name: Time_Above_Capacity
     Type: RAEtherNetIPTag
     DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Time_Above_100_Percent_Capacity"
+      Value: "Time_Above_Capacity"
   - Name: Resin_Bed_Smallest
     Type: RAEtherNetIPTag
     DataType: Float
@@ -4199,62 +4293,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Resin_Bed_Largest"
-  - Name: Resin_Bed_Avg
+  - Name: Resin_Bed_Average
     Type: RAEtherNetIPTag
     DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Resin_Bed_Avg"
-  - Name: AVG_Resin_Concentrations_Num_of_Samples
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "AVG_Resin_Concentrations_Num_of_Samples"
-  - Name: AVG_Resin_Concentrations_Flow_Rate
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "AVG_Resin_Concentrations_Flow_Rate"
-  - Name: AVG_Resin_Concentrations_Top
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "AVG_Resin_Concentrations_Top"
-  - Name: AVG_Resin_Concentrations_Upper
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "AVG_Resin_Concentrations_Upper"
-  - Name: AVG_Resin_Concentrations_Lower
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "AVG_Resin_Concentrations_Lower"
-  - Name: AVG_Resin_Concentrations_Bottom
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "AVG_Resin_Concentrations_Bottom"
+      Value: "Resin_Bed_Average"
   - Name: Resin_Added
     Type: RAEtherNetIPTag
     DataType: Float
@@ -4263,6 +4309,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Resin_Added"
+  - Name: Salt_Added
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Salt_Added"
   - Name: Salt_Consumed
     Type: RAEtherNetIPTag
     DataType: Float
@@ -4295,14 +4349,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Power_Consumed"
-  - Name: Paused_Time_NVO
+  - Name: Paused_Time
     Type: RAEtherNetIPTag
     DataType: Float
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Paused_Time_NVO"
+      Value: "Paused_Time"
   - Name: Log_Status
     Type: RAEtherNetIPTag
     DataType: SByte
@@ -15361,116 +15415,6 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Duration_Units"
-- Name: Accumulation
-  Id: g=485ca57a7f9695aa954352f44b3f5ebb
-  Supertype: TagStructure
-  DataType: Accumulation
-  ValueRank: Any
-  Children:
-  - Name: EnableIn
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "EnableIn"
-  - Name: EnableOut
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "EnableOut"
-  - Name: Input
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Input"
-  - Name: Last
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Last"
-  - Name: Last_5_Average
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Last_5_Average"
-  - Name: Total_Last_Day
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Total_Last_Day"
-  - Name: Total_Last_Month
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Total_Last_Month"
-  - Name: Total_Last_Year
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Total_Last_Year"
-  - Name: Total_Today
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Total_Today"
-  - Name: Total_This_Month
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Total_This_Month"
-  - Name: Total_This_Year
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Total_This_Year"
-  - Name: Total_LifeTime
-    Type: RAEtherNetIPTag
-    DataType: Float
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Total_LifeTime"
-  - Name: Factory_Reset
-    Type: RAEtherNetIPTag
-    DataType: Boolean
-    Children:
-    - Name: SymbolName
-      Type: BaseDataVariableType
-      DataType: String
-      Value: "Factory_Reset"
 - Name: 'AB:5000_DO_Diag_Channel:C:01'
   Id: g=0d5da7ecb5002458fc09d9599dca079b
   Supertype: TagStructure

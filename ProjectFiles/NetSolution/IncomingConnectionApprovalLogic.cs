@@ -3,6 +3,7 @@ using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.System;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class IncomingConnectionApprovalLogic : BaseNetLogic

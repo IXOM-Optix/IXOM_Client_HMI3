@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Linq;
 using FilesystemBrowserHelper;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 class Location

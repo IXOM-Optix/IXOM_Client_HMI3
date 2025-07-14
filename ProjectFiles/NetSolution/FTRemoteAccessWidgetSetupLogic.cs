@@ -7,6 +7,7 @@ using FTOptix.NetLogic;
 using FTOptix.Core;
 using FTOptix.CoreBase;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class FTRemoteAccessWidgetSetupLogic : BaseNetLogic

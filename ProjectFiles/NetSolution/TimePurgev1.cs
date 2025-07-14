@@ -12,6 +12,7 @@ using FTOptix.NetLogic;
 using FTOptix.DataLogger;
 using FTOptix.Store;
 using FTOptix.SQLiteStore;
+using FTOptix.MQTTClient;
 #endregion
 
 public class TimePurgev1 : BaseNetLogic

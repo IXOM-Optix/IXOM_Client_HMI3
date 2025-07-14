@@ -15,6 +15,7 @@ using FTOptix.EventLogger;
 using FTOptix.AuditSigning;
 using FTOptix.OPCUAClient;
 using FTOptix.SerialPort;
+using FTOptix.MQTTClient;
 #endregion
 
 public class ChangeUserChangePasswordButtonLogic : BaseNetLogic

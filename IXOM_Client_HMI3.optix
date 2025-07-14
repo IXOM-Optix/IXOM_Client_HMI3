@@ -137,16 +137,24 @@ Project:
    Uri: 'urn:FTOptix:S7TiaProfinet:Net'
    Module: FTOptix.S7TiaProfinet.Net
    Version: 1.1
+  35:
+   Uri: 'urn:FTOptix:MQTTClient'
+   Module: FTOptix.MQTTClient
+   Version: 3.0
+  36:
+   Uri: 'urn:FTOptix:MQTTClient:Net'
+   Module: FTOptix.MQTTClient.Net
+   Version: 3.0
  Statistics:
-  TotalNodeCount: 652708
-  Objects: 72880
-  ObjectTypes: 246
-  Variables: 579198
+  TotalNodeCount: 658255
+  Objects: 73405
+  ObjectTypes: 247
+  Variables: 584214
   VariableTypes: 155
   DataTypes: 170
-  Methods: 59
-  References: 17570
+  Methods: 64
+  References: 17578
   ReferenceTypes: 0
-  Files: 105
+  Files: 107
  Nodes:
  - File: Nodes/IXOM_Client_HMI3.yaml

@@ -8,6 +8,7 @@ using FTOptix.UI;
 using FTOptix.HMIProject;
 using FilesystemBrowserHelper;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class FilesystemBrowserDatagridLogic : BaseNetLogic

@@ -92776,29 +92776,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Total_This_Day@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/This_Day"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -92850,29 +92831,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Total_Last_Day@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Last_Day"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -92911,7 +92873,7 @@ Children:
       ModellingRule: Optional
       Value: 30.0
   - Name: ACC_Display_Line_Last_Last_4
-    Type: ACC_Display_Line_Last_Last_5
+    Type: ACC_Display_Line_AVG_Count_AVG_Value
     Children:
     - Name: MoveTarget
       Type: NodePointer
@@ -93106,46 +93068,10 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: StringFormatter1
-          Type: StringFormatter
-          Children:
-          - Name: Source0
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Last@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
-          - Name: Source1
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../Data_Decimal_Places"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Alias_ACC}/Average_Count"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -93157,10 +93083,18 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Alias_ACC}/Units"
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Units"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -93180,29 +93114,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Average_Value@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Average_Value"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -93241,7 +93156,7 @@ Children:
       ModellingRule: Optional
       Value: 30.0
   - Name: ACC_Display_Line_Last_Last_5
-    Type: ACC_Display_Line_Last_Last_5
+    Type: ACC_Display_Line_AVG_Count_AVG_Value
     Children:
     - Name: MoveTarget
       Type: NodePointer
@@ -93436,46 +93351,10 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: StringFormatter1
-          Type: StringFormatter
-          Children:
-          - Name: Source0
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Last@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
-          - Name: Source1
-            Type: BaseDataVariableType
-            DataType: BaseDataType
-            ReferenceType: HasSource
-            Children:
-            - Name: DynamicLink
-              Type: DynamicLink
-              DataType: NodePath
-              Value: "../../../../Data_Decimal_Places"
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "{Alias_ACC}/Average_Count"
       - Name: Visible
         Type: BaseDataVariableType
         DataType: Boolean
@@ -93487,10 +93366,18 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         Children:
-        - Name: DynamicLink
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{Alias_ACC}/Units"
+        - Name: StringFormatter1
+          Type: StringFormatter
+          Children:
+          - Name: Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Units"
       - Name: LeftMargin
         Type: BaseVariableType
         DataType: Size
@@ -93510,29 +93397,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Average_Value@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Average_Value"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -93774,29 +93642,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Total_This_Day@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/This_Day"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -93848,29 +93697,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Total_Last_Day@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Last_Day"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -94112,29 +93942,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Total_This_Day@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/This_Day"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -94186,29 +93997,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Total_Last_Day@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Last_Day"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -94450,29 +94242,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Total_This_Day@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/This_Day"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType
@@ -94524,29 +94297,10 @@ Children:
             DataType: BaseDataType
             ReferenceType: HasSource
             Children:
-            - Name: LinearConverter1
-              Type: LinearConverter
-              Children:
-              - Name: Source
-                Type: BaseDataVariableType
-                DataType: Number
-                ReferenceType: HasSource
-                Value: {"Type":11,"Body":0.0}
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "{Alias_ACC}/Total_Last_Day@Value"
-              - Name: Slope
-                Type: BaseDataVariableType
-                DataType: Double
-                ReferenceType: HasParameter
-                Value: "NaN"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "../../../../../../Scale_Factor"
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "{Alias_ACC}/Last_Day"
           - Name: Source1
             Type: BaseDataVariableType
             DataType: BaseDataType

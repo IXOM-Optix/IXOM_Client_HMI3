@@ -4,6 +4,7 @@ using FTOptix.HMIProject;
 using FTOptix.NetLogic;
 using System.Linq;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class NetworkConfiguratorEditModelsLogic : BaseNetLogic

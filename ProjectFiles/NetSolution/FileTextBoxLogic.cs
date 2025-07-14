@@ -9,6 +9,7 @@ using System;
 using FTOptix.HMIProject;
 using FilesystemBrowserHelper;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class FileTextBoxLogic : BaseNetLogic

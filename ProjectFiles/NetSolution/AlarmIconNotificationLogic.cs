@@ -22,6 +22,7 @@ using FTOptix.AuditSigning;
 using FTOptix.OPCUAClient;
 using FTOptix.UI;
 using FTOptix.SerialPort;
+using FTOptix.MQTTClient;
 #endregion
 
 public class AlarmIconNotificationLogic : BaseNetLogic

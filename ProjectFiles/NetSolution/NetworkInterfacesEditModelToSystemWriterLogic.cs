@@ -5,6 +5,7 @@ using FTOptix.NetLogic;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class NetworkInterfacesEditModelToSystemWriterLogic : BaseNetLogic

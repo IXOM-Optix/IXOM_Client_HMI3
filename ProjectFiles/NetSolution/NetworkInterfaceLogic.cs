@@ -4,6 +4,7 @@ using FTOptix.UI;
 using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class NetworkInterfaceLogic : BaseNetLogic

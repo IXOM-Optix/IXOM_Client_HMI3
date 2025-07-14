@@ -2,6 +2,82 @@ Name: DataTypes
 Type: FolderType
 Children:
 - Class: DataType
+  Name: Accum2
+  Id: g=b0035ad713a6afd11b0161a7192a1a87
+  Supertype: Structure
+  StructDefinition: 
+   {
+    "Name": "Accum",
+    "DataType": {
+     "IdType": 2,
+     "Id": "b0035ad713a6afd11b0161a7192a1a87",
+     "Namespace": 34
+    },
+    "Fields": [{
+      "Name": "This_Day",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "This_Week",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "This_Month",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "This_Year",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "This_Lifetime",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Last_Day",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Last_Week",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Last_Month",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Last_Year",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Average_Count",
+      "DataType": {
+       "Id": 4
+      }
+     },{
+      "Name": "Average_Value",
+      "DataType": {
+       "Id": 10
+      }
+     }]
+   }
+  DisplayName: {"LocaleId":"","Text":"Accum"}
+  Children:
+  - Name: ns=0;Default Binary
+    Type: DataTypeEncodingType
+    ModellingRule: None
+    DisplayName: {"LocaleId":"","Text":"Default Binary"}
+    ReferenceType: HasEncoding
+- Class: DataType
   Name: PLC_Data_Type1
   Id: g=251a6b43f55f27afef93f4bf0a74fab6
   Supertype: Structure
@@ -44,14 +120,14 @@ Children:
        "Id": 6
       },
       "ValueRank": "OneDimension",
-      "ArrayDimensions": [7]
+      "ArrayDimensions": [8]
      },{
       "Name": "DateTime_Set",
       "DataType": {
        "Id": 6
       },
       "ValueRank": "OneDimension",
-      "ArrayDimensions": [7]
+      "ArrayDimensions": [8]
      },{
       "Name": "DateTime_Sync",
       "DataType": {
@@ -320,7 +396,7 @@ Children:
      "Namespace": 34
     },
     "Fields": [{
-      "Name": "MMYYYY",
+      "Name": "Time_Stamp",
       "DataType": {
        "Id": 6
       }
@@ -350,12 +426,12 @@ Children:
        "Id": 10
       }
      },{
-      "Name": "Time_Above_90_Percent_Capacity",
+      "Name": "Time_Above_90_Pct_Cap",
       "DataType": {
        "Id": 10
       }
      },{
-      "Name": "Time_Above_100_Percent_Capacity",
+      "Name": "Time_Above_Capacity",
       "DataType": {
        "Id": 10
       }
@@ -370,42 +446,17 @@ Children:
        "Id": 10
       }
      },{
-      "Name": "Resin_Bed_Avg",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "AVG_Resin_Concentrations_Num_of_Samples",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "AVG_Resin_Concentrations_Flow_Rate",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "AVG_Resin_Concentrations_Top",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "AVG_Resin_Concentrations_Upper",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "AVG_Resin_Concentrations_Lower",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "AVG_Resin_Concentrations_Bottom",
+      "Name": "Resin_Bed_Average",
       "DataType": {
        "Id": 10
       }
      },{
       "Name": "Resin_Added",
+      "DataType": {
+       "Id": 10
+      }
+     },{
+      "Name": "Salt_Added",
       "DataType": {
        "Id": 10
       }
@@ -430,7 +481,7 @@ Children:
        "Id": 10
       }
      },{
-      "Name": "Paused_Time_NVO",
+      "Name": "Paused_Time",
       "DataType": {
        "Id": 10
       }
@@ -1805,92 +1856,6 @@ Children:
      }]
    }
   DisplayName: {"LocaleId":"","Text":"Sequencer_Step_History"}
-  Children:
-  - Name: ns=0;Default Binary
-    Type: DataTypeEncodingType
-    ModellingRule: None
-    DisplayName: {"LocaleId":"","Text":"Default Binary"}
-    ReferenceType: HasEncoding
-- Class: DataType
-  Name: Accumulation
-  Id: g=fe78e6c3cca771c3eb5a5a59d5701fd9
-  Supertype: Structure
-  StructDefinition: 
-   {
-    "Name": "Accumulation",
-    "DataType": {
-     "IdType": 2,
-     "Id": "fe78e6c3cca771c3eb5a5a59d5701fd9",
-     "Namespace": 34
-    },
-    "Fields": [{
-      "Name": "EnableIn",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "EnableOut",
-      "DataType": {
-       "Id": 1
-      }
-     },{
-      "Name": "Input",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Last",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Last_5_Average",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Total_Last_Day",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Total_Last_Month",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Total_Last_Year",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Total_Today",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Total_This_Month",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Total_This_Year",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Total_LifeTime",
-      "DataType": {
-       "Id": 10
-      }
-     },{
-      "Name": "Factory_Reset",
-      "DataType": {
-       "Id": 1
-      }
-     }]
-   }
-  DisplayName: {"LocaleId":"","Text":"Accumulation"}
   Children:
   - Name: ns=0;Default Binary
     Type: DataTypeEncodingType

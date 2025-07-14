@@ -4,6 +4,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.System;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class RequestAssistanceSwitchLogic : BaseNetLogic

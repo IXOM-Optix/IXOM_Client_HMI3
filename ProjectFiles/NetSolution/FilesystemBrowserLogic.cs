@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using FilesystemBrowserHelper;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class FilesystemBrowserLogic : BaseNetLogic

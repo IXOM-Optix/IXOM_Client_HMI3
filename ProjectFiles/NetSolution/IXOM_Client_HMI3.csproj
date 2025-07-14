@@ -15,5 +15,10 @@
   <PropertyGroup>
     <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MQTTnet" Version="3.1.2"/>
+    <PackageReference Include="MQTTnet.Extensions.ManagedClient" Version="3.1.2"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+  </ItemGroup>
   <Import Project="IXOM_Client_HMI3.references"/>
 </Project>

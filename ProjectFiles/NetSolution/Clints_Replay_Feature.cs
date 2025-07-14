@@ -25,6 +25,7 @@ using System.ComponentModel;
 using FTOptix.EventLogger;
 using FTOptix.AuditSigning;
 using FTOptix.SerialPort;
+using FTOptix.MQTTClient;
 #endregion
 
 public class Clints_Replay_Feature : BaseNetLogic

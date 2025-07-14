@@ -1215,7 +1215,7 @@ Children:
       Direction: Forward
     - Name: SamplingMode
       Type: PropertyType
-      DataType: SamplingModeEnum
+      DataType: ns=11;SamplingModeEnum
       Value: 1
     - Name: Store
       Type: NodePointer
@@ -1280,7 +1280,7 @@ Children:
     Children:
     - Name: SamplingMode
       Type: PropertyType
-      DataType: SamplingModeEnum
+      DataType: ns=11;SamplingModeEnum
       Value: 2
     - Name: Store
       Type: NodePointer

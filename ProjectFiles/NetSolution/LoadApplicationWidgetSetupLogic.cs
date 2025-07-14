@@ -6,6 +6,7 @@ using FTOptix.Core;
 using FTOptix.CoreBase;
 using FTOptix.NetLogic;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class LoadApplicationWidgetSetupLogic : BaseNetLogic

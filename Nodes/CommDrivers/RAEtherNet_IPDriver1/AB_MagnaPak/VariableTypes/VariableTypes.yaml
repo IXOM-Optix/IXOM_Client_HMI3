@@ -5343,6 +5343,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Resin_Added"
+  - Name: Salt_Added
+    Type: RAEtherNetIPTag
+    DataType: Float
+    Children:
+    - Name: SymbolName
+      Type: BaseDataVariableType
+      DataType: String
+      Value: "Salt_Added"
   - Name: Salt_Consumed
     Type: RAEtherNetIPTag
     DataType: Float
@@ -5383,14 +5391,14 @@ Children:
       Type: BaseDataVariableType
       DataType: String
       Value: "Paused_Time"
-  - Name: Salt_Added
+  - Name: Log_Status
     Type: RAEtherNetIPTag
-    DataType: Float
+    DataType: SByte
     Children:
     - Name: SymbolName
       Type: BaseDataVariableType
       DataType: String
-      Value: "Salt_Added"
+      Value: "Log_Status"
 - Name: System
   Id: g=409036065e384be172f7cadb299fb55a
   Supertype: TagStructure

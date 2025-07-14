@@ -22,6 +22,7 @@ using FTOptix.UI;
 using FTOptix.Core;
 using FTOptix.OPCUAClient;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class RT_DT : BaseNetLogic

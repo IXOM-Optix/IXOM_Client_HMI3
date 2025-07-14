@@ -23,6 +23,7 @@ using FTOptix.Core;
 using FTOptix.EventLogger;
 using FTOptix.AuditSigning;
 using FTOptix.OPCUAClient;
+using FTOptix.MQTTClient;
 #endregion
 
 public class DIG_Replay_Query : BaseNetLogic

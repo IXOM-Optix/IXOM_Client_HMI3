@@ -3,6 +3,7 @@ using System.IO;
 using FTOptix.NetLogic;
 using FTOptix.UI;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class FTOptixStudioVersionLogic : BaseNetLogic

@@ -22,6 +22,7 @@ using FTOptix.UI;
 using FTOptix.Core;
 using FTOptix.EventLogger;
 using FTOptix.OPCUAClient;
+using FTOptix.MQTTClient;
 #endregion
 
 public class SnF_MonthlyReport : BaseNetLogic

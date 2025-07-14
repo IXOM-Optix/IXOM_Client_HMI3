@@ -430,6 +430,84 @@ Children:
         - Name: STS
           Type: StoreColumn
           DataType: Int16
+    - Name: Monthly
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=13;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=13;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Time_Stamp
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Water_Treated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Regenerated
+          Type: StoreColumn
+          DataType: Float
+        - Name: Treatment_Rate
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Max
+          Type: StoreColumn
+          DataType: Float
+        - Name: Contactor_Flow_Rate_Avg
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_90_Pct_Cap
+          Type: StoreColumn
+          DataType: Float
+        - Name: Time_Above_Capacity
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Smallest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Largest
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Bed_Average
+          Type: StoreColumn
+          DataType: Float
+        - Name: Resin_Added
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Waste_Produced
+          Type: StoreColumn
+          DataType: Float
+        - Name: Service_Water_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Power_Consumed
+          Type: StoreColumn
+          DataType: Float
+        - Name: Paused_Time
+          Type: StoreColumn
+          DataType: Float
+        - Name: Salt_Added
+          Type: StoreColumn
+          DataType: Float
   - Class: Reference
     Target: ns=29;i=30
     Direction: Forward

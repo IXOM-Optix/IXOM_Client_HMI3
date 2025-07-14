@@ -948,6 +948,11 @@ Children:
        "Id": 10
       }
      },{
+      "Name": "Salt_Added",
+      "DataType": {
+       "Id": 10
+      }
+     },{
       "Name": "Salt_Consumed",
       "DataType": {
        "Id": 10
@@ -973,9 +978,9 @@ Children:
        "Id": 10
       }
      },{
-      "Name": "Salt_Added",
+      "Name": "Log_Status",
       "DataType": {
-       "Id": 10
+       "Id": 2
       }
      }]
    }

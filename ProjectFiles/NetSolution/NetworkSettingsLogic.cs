@@ -6,6 +6,7 @@ using FTOptix.NetLogic;
 using FTOptix.UI;
 using System.Linq;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class NetworkSettingsLogic : BaseNetLogic

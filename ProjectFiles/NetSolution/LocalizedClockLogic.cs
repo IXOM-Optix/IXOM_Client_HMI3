@@ -14,6 +14,7 @@ using FTOptix.S7TiaProfinet;
 using FTOptix.AuditSigning;
 using FTOptix.OPCUAClient;
 using FTOptix.SerialPort;
+using FTOptix.MQTTClient;
 #endregion
 
 public class LocalizedClockLogic : BaseNetLogic

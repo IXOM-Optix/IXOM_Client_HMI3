@@ -2,6 +2,7 @@
 using UAManagedCore;
 using FTOptix.NetLogic;
 using FTOptix.EventLogger;
+using FTOptix.MQTTClient;
 #endregion
 
 public class NetworkInterfacesEditModelReaderLogic : BaseNetLogic
