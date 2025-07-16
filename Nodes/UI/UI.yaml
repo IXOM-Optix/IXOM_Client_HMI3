@@ -365,7 +365,7 @@ Children:
   - Name: StartWindow
     Type: NodePointer
     DataType: NodeId
-    Value: "/Objects/IXOM_Client_HMI3/UI/MainWindow"
+    Value: "/Objects/IXOM_Client_HMI3/UI/MainWindow_Mobile"
     Children:
     - Name: Kind
       Type: PropertyType
@@ -2939,6 +2939,10 @@ Children:
     DataType: Boolean
     ModellingRule: Optional
     Value: true
+  - Name: AlwaysOnTop
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
 - File: Screens/Screens.yaml
 - File: Screens_Mobile/Screens_Mobile.yaml
 - File: Devices/Devices.yaml

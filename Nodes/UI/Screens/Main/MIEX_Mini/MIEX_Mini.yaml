@@ -26205,7 +26205,7 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"MIEX Efflent"}
+      Value: {"LocaleId":"en-US","Text":"MIEX Effluent"}
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -43463,7 +43463,7 @@ Children:
     - Name: Text
       Type: BaseDataVariableType
       DataType: LocalizedText
-      Value: {"LocaleId":"en-US","Text":"MIEX Efflent"}
+      Value: {"LocaleId":"en-US","Text":"MIEX Effluent"}
     - Name: Width
       Type: BaseVariableType
       DataType: Size

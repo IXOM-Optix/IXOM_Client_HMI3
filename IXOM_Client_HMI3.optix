@@ -146,14 +146,14 @@ Project:
    Module: FTOptix.MQTTClient.Net
    Version: 3.0
  Statistics:
-  TotalNodeCount: 658579
-  Objects: 73406
-  ObjectTypes: 247
-  Variables: 584537
+  TotalNodeCount: 658915
+  Objects: 73449
+  ObjectTypes: 248
+  Variables: 584829
   VariableTypes: 155
   DataTypes: 170
   Methods: 64
-  References: 17578
+  References: 17579
   ReferenceTypes: 0
   Files: 107
  Nodes:
