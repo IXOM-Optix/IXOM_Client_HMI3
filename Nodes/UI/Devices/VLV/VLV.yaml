@@ -1804,7 +1804,7 @@ Children:
           DataType: LocalizedText
           ReferenceType: HasParameter
           ModellingRule: Optional
-          Value: {"LocaleId":"en-US","Text":"{0:n2}%"}
+          Value: {"LocaleId":"en-US","Text":"{0:n1}%"}
         - Name: ns=7;Source0
           Type: BaseDataVariableType
           DataType: BaseDataType

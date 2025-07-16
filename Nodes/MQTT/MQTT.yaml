@@ -92,6 +92,7 @@ Children:
     - Name: IsRunning
       Type: BaseDataVariableType
       DataType: Boolean
+      Value: true
     - Name: IsDebuggingMode
       Type: BaseDataVariableType
       DataType: Boolean
@@ -292,7 +293,7 @@ Children:
   - Name: BrokerAddress
     Type: PropertyType
     DataType: String
-    Value: "localhost"
+    Value: "96.69.165.218"
   - Name: BrokerPort
     Type: PropertyType
     DataType: UInt16
